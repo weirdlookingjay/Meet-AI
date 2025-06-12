@@ -20,7 +20,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { authClient } from "@/lib/auth-client";
 import { useState } from "react";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { FaGithub, FaGoogle } from "react-icons/fa";
 
 const formSchema = z.object({
@@ -185,7 +185,7 @@ export const SignInView = () => {
             </form>
           </Form>
 
-          <div className="bg-radial form-green-700 to-green-900 relative hidden md:flex flex-col gap-y-4 items-center justify-center">
+          <div className="bg-radial from-sidebar-accent to-sidebar relative hidden md:flex flex-col gap-y-4 items-center justify-center">
             <Image
               src="/logo.svg"
               alt="logo"
